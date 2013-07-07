@@ -1,5 +1,6 @@
 class ApiController < ApplicationController
 def pages()
+	c=1
 	@pages=Page.select("page_name").all;
 	respond_to do |format|
         format.html # index.html.erb
